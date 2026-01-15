@@ -24,4 +24,32 @@ The project follows best practices such as using **staging tables**, **window fu
 - Produce a final clean table for analysis
 
 ---
+## Remove Duplicates
+- Duplicates are identified using the ROW_NUMBER() window function and removed using a CTE.
+- ROW_NUMBER() OVER (
+  PARTITION BY company, industry, total_laid_off,
+  percentage_laid_off, `date`
+) AS row_num
+
+  ## Standardized the Data
+-Trimmed company names
+- Standardized industry and country values
+- Fixed inconsistent formatting
+- Converted date columns to proper date format
+
+  ## Handle Null and Blank Values
+- Replaced blank strings with NULL
+- Populated missing industries using self-joins where possible
+- Removed rows with insufficient data when necessary
+
+  ## Final Clean Table
+- The fully cleaned dataset is stored in:
+- layoffs_staging2
+This table is ready for analysis and visualization.
+
+## Screenshots
+![Raw layoffs table](i)
+
+### Final Cleaned Table
+![Final cleaned table](images/final_table.png)
 
