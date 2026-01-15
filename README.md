@@ -32,7 +32,7 @@ The project follows best practices such as using **staging tables**, **window fu
 ) AS row_num
 
   ## Standardized the Data
--Trimmed company names
+- Trimmed company names
 - Standardized industry and country values
 - Fixed inconsistent formatting
 - Converted date columns to proper date format
@@ -52,4 +52,12 @@ This table is ready for analysis and visualization.
 
 ### Final Cleaned Table
 ![Final cleaned table](Unknown-2.jpg)
+
+## Skills Demonstrated
+- SQL data cleaning and transformation
+- Window functions (ROW_NUMBER)
+- Common Table Expressions (CTEs)
+- Handling duplicates and null values
+- Data standardization
+- MySQL best practices
 
