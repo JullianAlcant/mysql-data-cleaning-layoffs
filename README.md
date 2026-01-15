@@ -48,8 +48,8 @@ The project follows best practices such as using **staging tables**, **window fu
 This table is ready for analysis and visualization.
 
 ## Screenshots
-![Raw layoffs table](i)
+![Raw layoffs table](Unknown.jpg)
 
 ### Final Cleaned Table
-![Final cleaned table](images/final_table.png)
+![Final cleaned table](Unknown-2.jpg)
 
